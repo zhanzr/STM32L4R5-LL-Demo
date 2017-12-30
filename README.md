@@ -1,142 +1,55 @@
-LL API dhrystone.
-#define RUN_NUMBER	800000
+LL API Coremark.
+#define ITERATIONS	5000
 
 with microlib:
-Microseconds for one run through Dhrystone[2-3396]:     4.2 
-Dhrystones per Second:                      235710.1 
+CoreMark 1.0 : 311.410065 / ARMCC 5060422 -c --cpu Cortex-M4.fp -g -O3 -Otime --apcs=interwork --split_sections --C99 / STACK
 
 without microlib:
-Microseconds for one run through Dhrystone[2-2396]:     3.0 
-Dhrystones per Second:                      334168.8 
+CoreMark 1.0 : 311.468261 / ARMCC 5060422 -c --cpu Cortex-M4.fp -g -O3 -Otime --apcs=interwork --split_sections --C99 / STACK
 
 =======================================
 With microlib:
-LL Dhrystone For STM32L4R5 Nucleo Board @ 120000000 Hz
+LL Coremark For STM32L4R5 Nucleo Board @ 120000000 Hz
 Flash Size:2048	,PackType:4
-
-Dhrystone Benchmark, Version 2.1 (Language: C)
-
-Program compiled with 'register' attribute
-
-Please give the number of runs through the benchmark: 
-Execution starts, 800000 runs through Dhrystone
-Execution ends
-
-Final values of the variables used in the benchmark:
-
-Int_Glob:            5
-        should be:   5
-Bool_Glob:           1
-        should be:   1
-Ch_1_Glob:           A
-        should be:   A
-Ch_2_Glob:           B
-        should be:   B
-Arr_1_Glob[8]:       7
-        should be:   7
-Arr_2_Glob[8][7]:    800010
-        should be:   Number_Of_Runs + 10
-Ptr_Glob->
-  Ptr_Comp:          536881184
-        should be:   (implementation-dependent)
-  Discr:             0
-        should be:   0
-  Enum_Comp:         2
-        should be:   2
-  Int_Comp:          17
-        should be:   17
-  Str_Comp:          DHRYSTONE PROGRAM, SOME STRING
-        should be:   DHRYSTONE PROGRAM, SOME STRING
-Next_Ptr_Glob->
-  Ptr_Comp:          536881184
-        should be:   (implementation-dependent), same as above
-  Discr:             0
-        should be:   0
-  Enum_Comp:         1
-        should be:   1
-  Int_Comp:          18
-        should be:   18
-  Str_Comp:          DHRYSTONE PROGRAM, SOME STRING
-        should be:   DHRYSTONE PROGRAM, SOME STRING
-Int_1_Loc:           5
-        should be:   5
-Int_2_Loc:           13
-        should be:   13
-Int_3_Loc:           7
-        should be:   7
-Enum_Loc:            1
-        should be:   1
-Str_1_Loc:           DHRYSTONE PROGRAM, 1'ST STRING
-        should be:   DHRYSTONE PROGRAM, 1'ST STRING
-Str_2_Loc:           DHRYSTONE PROGRAM, 2'ND STRING
-        should be:   DHRYSTONE PROGRAM, 2'ND STRING
-
-Microseconds for one run through Dhrystone[2-3396]:     4.2 
-Dhrystones per Second:                      235710.1 
+2K performance run parameters for coremark.
+CoreMark Size    : 666
+Total ticks      : 16056
+Total time (secs): 16.056000
+Iterations/Sec   : 311.410065
+Iterations       : 5000
+Compiler version : ARMCC 5060422
+Compiler flags   : -c --cpu Cortex-M4.fp -g -O3 -Otime --apcs=interwork --split_sections --C99
+Memory location  : STACK
+seedcrc          : 0xe9f5
+[0]crclist       : 0xe714
+[0]crcmatrix     : 0x1fd7
+[0]crcstate      : 0x8e3a
+[0]crcfinal      : 0xbd59
+Correct operation validated. See readme.txt for run and reporting rules.
+CoreMark 1.0 : 311.410065 / ARMCC 5060422 -c --cpu Cortex-M4.fp -g -O3 -Otime --apcs=interwork --split_sections --C99 / STACK
+End of Coremark
 
 Without microlib:
-LL Dhrystone For STM32L4R5 Nucleo Board @ 120000000 Hz
+LL Coremark For STM32L4R5 Nucleo Board @ 120000000 Hz
 Flash Size:2048	,PackType:4
+2K performance run parameters for coremark.
+CoreMark Size    : 666
+Total ticks      : 16053
+Total time (secs): 16.053000
+Iterations/Sec   : 311.468261
+Iterations       : 5000
+Compiler version : ARMCC 5060422
+Compiler flags   : -c --cpu Cortex-M4.fp -g -O3 -Otime --apcs=interwork --split_sections --C99
+Memory location  : STACK
+seedcrc          : 0xe9f5
+[0]crclist       : 0xe714
+[0]crcmatrix     : 0x1fd7
+[0]crcstate      : 0x8e3a
+[0]crcfinal      : 0xbd59
+Correct operation validated. See readme.txt for run and reporting rules.
+CoreMark 1.0 : 311.468261 / ARMCC 5060422 -c --cpu Cortex-M4.fp -g -O3 -Otime --apcs=interwork --split_sections --C99 / STACK
+End of Coremark
 
-Dhrystone Benchmark, Version 2.1 (Language: C)
-
-Program compiled with 'register' attribute
-
-Please give the number of runs through the benchmark: 
-Execution starts, 800000 runs through Dhrystone
-Execution ends
-
-Final values of the variables used in the benchmark:
-
-Int_Glob:            5
-        should be:   5
-Bool_Glob:           1
-        should be:   1
-Ch_1_Glob:           A
-        should be:   A
-Ch_2_Glob:           B
-        should be:   B
-Arr_1_Glob[8]:       7
-        should be:   7
-Arr_2_Glob[8][7]:    800010
-        should be:   Number_Of_Runs + 10
-Ptr_Glob->
-  Ptr_Comp:          536881624
-        should be:   (implementation-dependent)
-  Discr:             0
-        should be:   0
-  Enum_Comp:         2
-        should be:   2
-  Int_Comp:          17
-        should be:   17
-  Str_Comp:          DHRYSTONE PROGRAM, SOME STRING
-        should be:   DHRYSTONE PROGRAM, SOME STRING
-Next_Ptr_Glob->
-  Ptr_Comp:          536881624
-        should be:   (implementation-dependent), same as above
-  Discr:             0
-        should be:   0
-  Enum_Comp:         1
-        should be:   1
-  Int_Comp:          18
-        should be:   18
-  Str_Comp:          DHRYSTONE PROGRAM, SOME STRING
-        should be:   DHRYSTONE PROGRAM, SOME STRING
-Int_1_Loc:           5
-        should be:   5
-Int_2_Loc:           13
-        should be:   13
-Int_3_Loc:           7
-        should be:   7
-Enum_Loc:            1
-        should be:   1
-Str_1_Loc:           DHRYSTONE PROGRAM, 1'ST STRING
-        should be:   DHRYSTONE PROGRAM, 1'ST STRING
-Str_2_Loc:           DHRYSTONE PROGRAM, 2'ND STRING
-        should be:   DHRYSTONE PROGRAM, 2'ND STRING
-
-Microseconds for one run through Dhrystone[2-2396]:     3.0 
-Dhrystones per Second:                      334168.8 
 
 
 
